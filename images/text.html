@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vape Store | Ecommerce capable site</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -17,18 +18,19 @@
   <div class="container">
     <div class="navbar">
       <div class="logo">
-          <img src="images/logo.jpeg" width="125px">
+          <img src="./logo.jpg" width="125px">
       </div>
+      <img src="./menu.jpg" class="menu-icon" width=30px height=30px
+      onclick="menutoggle()">
       <nav>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Products</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="">Search</a></li>
           <li><a href="">Contact</a></li>
           <li><a href="">Account</a></li>
         </ul>
       </nav>
-      <img src="images/cart.jpeg" width="30px" height="30px">
   </div>
   </div>
 
@@ -41,13 +43,215 @@
         <a href="" class="btn">Explore Now &#8594; </a>
     </div>
     <div class="col-2">
-      <img src="images/image1.jpeg"> 
+      <img src="./image1.jpg"> 
     </div>
   </div>
 </div>
 
 <!--------- featured categories ---------------->
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+     <div class="col-3">
+      <img src="./image2.jpg">
+     </div>
+     <div class="col-3">
+      <img src="./image3.jpg">
+     </div>
+     <div class="col-3">
+      <img src="./image4.jpg">
+     </div>
+    <div>
+  </div>
+</div>
+
+<!--------------featured products-->
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <a href="https://motivape.com/">
+  <div class="row">
+    <div class="col-4">
+      <img src="./product1.jpg">
+      <h4>Moti vapes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>$50</p>
+      </a>
+      
+    </div>
+    <div class="col-4">
+      <a href="https://randys.com/product/tango/#select-your-color">
+      <img src="./product2.jpg"> 
+      <h4>Tango vapes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>$25</p>
+      </a>
+    </div>
+
+    <div class="col-4">
+      <a href="https://vapordna.com/collections/elite">
+        <img src="./product3.jpg"> 
+      <h4>eLite vapes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>$30</p>
+      </a>
+    </div>
+    
+    <div class="col-4">
+      <a href="https://www.blu.com/en/US">
+      <img src="./product4.jpg">
+      <h4>Blu Vapes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>$40</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+<!--------offer------>
+        <div class="offer">
+            <div class="small-container">
+              <div class="row">
+                <div class="col-2">
+                  <img src="./exclusive.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                  <p>Exclusive matchings on Vape Store</p>
+                  <h1>The cartridge 1</h1>
+                  <small> Vapor is an alternative to smoking cigarettes. <br>
+                    This exclusive offer on our site will leave you never wanting again. </small> <br>
+                  <a href="">Buy Now &#8594; </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+  
+<!---testimonial--->
+        <div class="testimonial">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-3">
+                <img src="./productfan.jpg" height=275px width=70px>
+                <i class="fa fa-quote-left"></i>
+                <p>
+                  This website changed my life and I couldn't be happier, thanks Vape Smart !
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
+<!---------brands-->
+<div class="brands">
+  <h5 class="brands">Brands available</h5>
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="./farts2.jpg">
+      </div>
+      <div class="col-5">
+        <img src="./farts3.jpg">
+      </div>  <div class="col-5">
+        <img src="./farts4.jpg">
+      </div>  <div class="col-5">
+        <img src="./farts5.jpg">
+      </div>  <div class="col-5">
+        <img src="./farts6.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------foooter for page-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Go to the Google Play, App Store, or our website for direct download</p>
+        <div class="app-logo">
+          <a href="https://play.google.com/store"> <img src="./play-store.jpg"> </a>
+          <a href="https://www.apple.com/shop"> <img src="./app-store.jpg"> </a>
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="./logo.jpg">
+        <p>We seek to create a better environment for the nicotine community as we safely <br>
+        transition them to better alternatives to cigarettes</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Other resources</h3>
+        <ul>
+          <li> Coupons </li>
+          <li> Blog Post </li>
+          <li> Return Policy </li>
+          <li> Associated partners </li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li> Instagram </li>
+          <li> Twitter </li>
+          <li> Github </li>
+          <li> Youtube </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="Copyright">Copyright 2020 Vape Smart Store</p>
+  </div>
+</div>
+
+<!-------------js for toggle menu-->
+<script>
+  let MenuItems= document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+function menutoggle(){
+  if(MenuItems.style.maxHeight == "0px")
+  {
+    MenuItems.style.maxHeight = "200px";
+  }
+  else
+  {
+    MenuItems.style.maxHeight = "0px";
+  }
+}
+
+</script>
 </body>
-</html>
+<html>
