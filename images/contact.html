@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vape Store | Ecommerce capable site</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="header">
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+          <img src="./logo.jpg" width="125px">
+      </div>
+      <img src="./menu.jpg" class="menu-icon" width=30px height=30px
+      onclick="menutoggle()">
+      <nav>
+        <ul>
+          <li><a href="./text.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./search.html">Search</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+      </nav>
+  </div>
+  </div>
+
+  <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+  
+  <!---------foooter for page-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Go to the Google Play, App Store, or our website for direct download</p>
+          <div class="app-logo">
+            <a href="https://play.google.com/store"> <img src="./play-store.jpg"> </a>
+            <a href="https://www.apple.com/shop"> <img src="./app-store.jpg"> </a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="./logo.jpg">
+          <p>We seek to create a better environment for the nicotine community as we safely <br>
+          transition them to better alternatives to cigarettes</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Other resources</h3>
+          <ul>
+            <li> Coupons </li>
+            <li> Blog Post </li>
+            <li> Return Policy </li>
+            <li> Associated partners </li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li> Instagram </li>
+            <li> Twitter </li>
+            <li> Github </li>
+            <li> Youtube </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="Copyright">Copyright 2020 Vape Smart Store</p>
+    </div>
+  </div>
+  
+  <!-------------js for toggle menu-->
+  <script>
+    let MenuItems= document.getElementById("MenuItems");
+  
+    MenuItems.style.maxHeight = "0px";
+  
+  function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+  
+  </script>
+  </body>
+  <html>
